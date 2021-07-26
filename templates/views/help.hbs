@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Help</title>
+</head>
+<body>
+    <div class="main-content">
+        {{>headerHelp}}
+        <p>{{helpText}}</p>
+        <ul class="help-tips">
+            <li>
+                If you encounter an error e.g <i>'unable to connect to geocoding service'</i>, ensure that you are connected to the internet and try again.
+            </li>
+            <li>
+                If the search result shown is for a different location with the same name as your search location, try to provide a more specific location e.g. <i>'Plateau, Nigeria'</i> instead of <i>'Plateau'</i>.
+            </li>
+        </ul>
+    </div>
+
+    {{>footer}}
+</body>
+</html>

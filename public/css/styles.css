@@ -1,0 +1,223 @@
+body {
+    color: #333333;
+    font-family: arial;
+    max-width: 650px;
+    margin: 0 auto;
+    padding: 0 16px;
+
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+.body-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+.about-text {
+    margin-left: 30px;
+}
+
+h2 {
+    color: #888888
+}
+
+.p-about {
+    color: #444444
+} 
+
+footer {
+    color: #888888;
+    border-top: 3px solid #eeeeee;
+    margin-top: 16px;
+    padding: 16px 0;
+}
+
+header {
+    margin-top: 16px;
+    margin-bottom: 48px;
+}
+
+header div.title-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+
+header div img {
+    height: 50px;
+    padding-top: 30px;
+
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 16px;
+}
+
+header a {
+    color: #888888;
+    margin-right: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s;
+}
+
+header a:hover {
+    border-bottom: 1px solid black;
+}
+
+.link {
+    transition: color 0.5s;
+}
+
+.link:hover {
+    color: #111111
+}
+
+.active-link {
+    color: #111111
+}
+
+.active-link-border {
+    border-bottom: 1px solid #111111;
+}
+
+.portrait {
+    width: 250px
+}
+
+#welcome-message {
+    margin-bottom: 30px;
+}
+
+.instructions {
+    margin-bottom: 45px;
+}
+
+li {
+    padding-bottom: 10px;
+}
+
+.messages {
+    padding: 5px;
+    margin-top: 50px;
+    background: #eeeeee;
+    height: 100px;
+}
+
+#message-1 {
+    padding: 5px;
+    font-weight: bold;
+}
+
+#message-2 {
+    padding: 5px;
+}
+
+input {
+    border: 1px solid #cccccc;
+    padding: 8px
+}
+
+button {
+    cursor: pointer;
+    border: 1px solid #888888;
+    background: #888888;
+    color: #ffffff;
+    padding: 8px
+}
+
+li.social a {
+    color: #111111
+}
+
+li.social a:hover {
+    color: #ff1111
+}
+
+ul.help-tips li {
+    padding: 15px 0;
+    line-height: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .body-main {
+        display: flex;
+        flex-direction: column
+    
+    }
+
+    header {
+        margin-top: 5px;
+        margin-bottom: 30px;
+    }
+
+    header div img {
+        height: 40px;
+        padding-top: 10px;
+    
+    }
+
+    h1 {
+        font-size: 30px;
+        margin-bottom: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .about-text {
+        margin: 0
+    }
+
+    #welcome-message {
+        margin-bottom: 7px;
+    }
+
+    .instructions {
+        margin-bottom: 5px;
+    }
+
+    header {
+        margin-bottom: 30px;
+    }
+    
+    input {
+        width: 71%;
+    }
+
+    .messages {
+        margin-top: 10px;
+        height: 145px;
+    }
+
+    .portrait {
+        width: 140px
+    }
+
+    .p-about {
+        line-height: 25px;
+        margin-top: 0
+    }
+
+    ul.help-tips li {
+        padding: 5px 0;
+
+    }
+
+    .about-ul {
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+
+}
