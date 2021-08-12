@@ -1,4 +1,5 @@
 const request = require('request')
+const dotenv = require('dotenv').config()
 
 // const forecast = (latitude, longitude, callback) => {
 //     const url = 'http://api.weatherstack.com/current?access_key=aa144077a6f562aef73320b10b1e9a1c&query=' + latitude + ',' + longitude
@@ -15,7 +16,7 @@ const request = require('request')
 // }
 
 const forecast = (latitude, longitude, callback) => {
-    const url = 'https://api.weatherapi.com/v1/current.json?key=97826378fde44c6cad9145331212607&q=' + latitude + ',' + longitude
+    const url = 'https://api.weatherapi.com/v1/current.json?key=' + process.env.KEY + '&q=' + latitude + ',' + longitude
 
     request({ url, json: true}, (error, { body } = {}) => {
         if (error) {
