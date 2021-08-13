@@ -6,10 +6,6 @@ const forecast = require('./utils/forecast')
 const cors = require('cors')
 
 
-// console.log(__dirname)
-// console.log(path.join(__dirname, '../public'))
-
-
 const app = express()
 const port = process.env.PORT || 3000
 
@@ -28,20 +24,7 @@ hbs.registerPartials(partialsPath)
 // Set up static directory to serve
 app.use(express.static(publicDirPath))
 
-
-// <------Old routes; for reference purposes------>
-// app.get('', (req, res) => {
-//     res.send('<h1>Hello Express!</h1>')
-// })
-
-// app.get('/help', (req, res) => {
-//     res.send('<h1>Help Page</h1>')
-// })
-
-// app.get('/about', (req, res) => {
-//     res.send('<h1>About Us</h1>')
-// })
-// <------Old routes for reference purposes------>
+// Set up routes
 
 app.get('', (req, res) => {
     res.render('index', {
@@ -96,12 +79,6 @@ app.get('/weather', (req, res) => {
         })
     }
 })
-
-// res.send({
-//     address: req.query.address,
-//     location: 'Abuja',
-//     forecast: 'It is 24 degrees out. It feels like 28 degrees out'
-//})
 
 
 app.get('/help/*', (req, res) => {

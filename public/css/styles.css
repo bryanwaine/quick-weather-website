@@ -113,6 +113,7 @@ li {
     margin-top: 50px;
     background: #eeeeee;
     height: 150px;
+    border-radius: 5px;
 }
 
 #message-1 {
