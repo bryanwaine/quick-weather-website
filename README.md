@@ -18,9 +18,6 @@ Copy contents of sample.env to your environment config file and replace with you
 ## Running the project in development environment
     $ npm run dev
     
-## Exposed Port
-    http://localhost:3000
-    
 ## API Documentation
 
 ## 1. Get Weather
