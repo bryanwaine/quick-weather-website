@@ -92,7 +92,8 @@ header a:hover {
 }
 
 .portrait {
-    width: 250px
+    width: 250px;
+    border-radius: 50%;
 }
 
 #welcome-message {
@@ -100,7 +101,7 @@ header a:hover {
 }
 
 .instructions {
-    margin-bottom: 45px;
+    margin-bottom: 40px;
 }
 
 li {
@@ -111,7 +112,7 @@ li {
     padding: 5px;
     margin-top: 50px;
     background: #eeeeee;
-    height: 100px;
+    height: 150px;
 }
 
 #message-1 {
@@ -187,7 +188,7 @@ ul.help-tips li {
     }
 
     .instructions {
-        margin-bottom: 5px;
+        margin-bottom: 0;
     }
 
     header {
@@ -195,7 +196,11 @@ ul.help-tips li {
     }
     
     input {
-        width: 71%;
+        width: 70%;
+    }
+
+    button {
+        width: 24%
     }
 
     .messages {
@@ -222,4 +227,24 @@ ul.help-tips li {
         margin-top: 0;
     }
 
+}
+
+@media screen and (max-width: 400px) {
+    input {
+        width: 70%;
+    }
+
+    button {
+        width: 23%
+    }
+}
+
+@media screen and (max-width: 350px) {
+    input {
+        width: 70%;
+    }
+
+    button {
+        width: 22%
+    }
 }

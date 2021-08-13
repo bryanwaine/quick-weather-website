@@ -15,7 +15,7 @@ const request = require('request')
 // }
 
 const forecast = (latitude, longitude, callback) => {
-    const url = 'https://api.weatherapi.com/v1/current.json?key=97826378fde44c6cad9145331212607&q=' + latitude + ',' + longitude
+    const url = 'https://api.weatherapi.com/v1/current.json?key=1228c67294744d5396e115951211208&q=' + latitude + ',' + longitude
 
     request({ url, json: true}, (error, { body } = {}) => {
         if (error) {
@@ -23,7 +23,7 @@ const forecast = (latitude, longitude, callback) => {
         } else if (body.error) {
             callback('Unable to find location')
         } else {
-            callback(undefined, body.current.condition.text + '. It is currently ' + body.current.temp_c + '℃ outside. There is a ' + body.current.humidity + '% chance of rain.')
+            callback(undefined, body.current.condition.text + '. It is currently ' + body.current.temp_c + '℃ outside. There is a ' + body.current.humidity + '% chance of rain today.')
         }
     })
 }
