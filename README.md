@@ -26,9 +26,12 @@ Copy contents of sample.env to your environment config file and replace with you
 ## 1. Get Weather
 
 ### Request Type: GET
+    Example:
     http://localhost:3000/weather?address=Abuja
+    https://bryan-quick-weather.herokuapp.com/weather?address=Abuja
     
 ### PARAMS Query Params
+    Example:
     KEY = address   VALUE = Abuja
     
 ### Hosted Heroku Server
