@@ -3,7 +3,7 @@ const dotenv = require('dotenv').config()
 
 // Set up weather api service
 const forecast = (latitude, longitude, callback) => {
-    const url = 'https://api.weatherapi.com/v1/current.json?key=1228c67294744d5396e115951211208&q=' + latitude + ',' + longitude
+    const url = 'https://api.weatherapi.com/v1/current.json?key=' + process.env.API_KEY + '&q=' + latitude + ',' + longitude
 
     request({ url, json: true}, (error, { body } = {}) => {
         if (error) {
