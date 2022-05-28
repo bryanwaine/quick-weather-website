@@ -2,7 +2,7 @@
 Quick Weather
 
 ## Description
-A weather forecast application created with Node.js and Express that uses APIs from [Mapbox](https://www.mapbox.com) and [WeatheAPI](https://www.weatherapi.com) to geocode and provide the current weather forecast for any provided location around the world.
+A weather forecast application created with Node.js and Express that uses APIs from [Mapbox](https://www.mapbox.com) and [WeatherAPI](https://www.weatherapi.com) to geocode and provide the current weather forecast for any provided location around the world.
 
 ## Requirments
 For development, you will need to have Node.js and npm installed in your environment
